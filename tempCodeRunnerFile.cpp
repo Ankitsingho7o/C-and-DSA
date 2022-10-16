@@ -1,7 +1,4 @@
-      // int k=1;
-        // while (k <= i)
-        // {
+   for(int i=0; i<b;i++){
+       answer = answer*a;
 
-        //     cout << k;
-        //     k = k + 1;
-        // }
+    }
