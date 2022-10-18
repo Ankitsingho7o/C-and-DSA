@@ -5,16 +5,27 @@ using namespace std;
 
 int main()
 {
-int a;
-cin>>a;
-int answer=0;
+    int n;
+    cin >> n;
+    int i = 0;
+    int answer = 0;
 
-while(a!=0){
-int digit = a%10;
-cout<<"in";
- answer = (answer*10)+digit;
-  a= a/10;
-}
-
-cout<<answer;
+    // Second approach
+    while (n!=0)
+    {
+        int bit = n&1;
+        answer= (bit*pow(10,i))+answer;
+        n=n>>1;
+        i++;
+    }
+    cout<<answer;
+    
+    // First Approach
+    // while(n!=0){
+    //     int rem = n%2;
+    //     answer = (rem* pow(10, i))+answer;
+    //     n=n/2;
+    //    i= i+1;
+    // }
+    // cout << answer;
 }

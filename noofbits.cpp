@@ -14,17 +14,17 @@ int main(){
    // int b= int(a);
    cout<<a;
 
-   // cout<<a;
-   // int count =0;
+   cout<<a;
+   int count =0;
 
-   // while(a>0){
+   while(a>0){
     
-   //  if(a%10==1){
-   //    count++;
-   //  }
-   //   a--;
-   // }
+    if(a%2==1){
+      count++;
+    }
+     a--;
+   }
 
-//   cout<<count;
+  cout<<count;
 
 }
